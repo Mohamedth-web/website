@@ -1,0 +1,153 @@
+/* ===============
+   1. global style
+================ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300;400&display=swap');
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; */
+html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+
+*{
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.2px;
+}
+ .container{
+  max-width: 1128px;
+  width: 50%;
+  margin: 0 auto;
+}
+.secondcontainer{
+  max-width: 1128px;
+  width: 95%;
+  margin: 0 auto;
+} 
+img{
+  max-width: 100%; 
+}
+/* ===============
+   2. header
+================ */
+ header{
+  text-align: center;
+  background-color: #F3EED9;
+  padding: 8em 0;
+}
+header h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 58px;
+  color: #824936;
+}
+header p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+ color: #222C2A;
+ font-weight: lighter;
+ letter-spacing: 6px;
+ text-transform: uppercase;
+}
+/* ===============
+   3. section
+================ */
+section{
+  padding: 6em 0;
+}
+.flex{
+  display: flex;
+  gap: 50px;
+}
+section h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #824936;
+  text-align: center;
+}
+section p{
+  font-family: 'Roboto', sans-serif; 
+  font-size: 21px;
+  color: #222C2A;
+  margin-top: 35px;
+}
+/* ===============
+   4.main 
+================ */
+ main{
+  background-color: #222C2A;
+  color: white;
+  padding: 4em 0;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+}
+ main h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+main p{
+  font-family: 'Roboto', sans-serif; 
+  font-size: 17px;
+  margin-top: 18px;
+}
+.custom{
+  width: 45%;
+}  
+/* ===============
+   4.footer
+================ */
+ footer{
+  background-color: #824936;
+  padding: 3em 0;
+  color: white;
+}
+footer h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+footer p{
+  font-family: 'Roboto', sans-serif; 
+  font-size: 17px;
+  margin-top: 18px;
+} 
+
+/* ===============
+   5.media
+================ */
+ @media (max-width:890px) {
+  .row{
+    flex-direction: column;
+  }
+  footer,main{
+    text-align: center;
+  }
+  .custom{
+    width: 100%;
+  }
+  .flex{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .img1{
+    margin-top: 25px;
+  }
+  .img2{
+    margin-bottom: 25px;
+  }
+  .secondcontainer{
+    max-width: 1128px;
+    width: 85%;
+    margin: 0 auto;
+  } 
+  .container{
+    max-width: 1128px;
+    width: 95%;
+    margin: 0 auto;
+  }
+} 
+@media (max-width:400px) {
+  header h2{
+    font-size: 38px;
+  }
+} 
